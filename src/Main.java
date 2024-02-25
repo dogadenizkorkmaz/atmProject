@@ -26,15 +26,15 @@ public class Main {
                         case 1: //para yatırma işlemi
                             System.out.print("Para miktarı : ");
                             int price = input.nextInt();
-                            balance += price;
+                            balance += price; //yeni bakiyeyi güncelle
                             break;
                         case 2: // para çekme işlemi
                             System.out.print("Para miktarı : ");
                             price = input.nextInt();
-                            if (price > balance) {
+                            if (price > balance) { //bakiyedeki tutardan daha fazla para çekme isteği geldiğinde;
                                 System.out.println("Bakiye yetersiz.");
                             } else {
-                                balance -= price;
+                                balance -= price;//yeni bakiyeyi güncelle
                             }
                             break;
                         case 3: //bakiye sorgulama işlemi
